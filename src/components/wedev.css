@@ -1,0 +1,696 @@
+
+
+
+/* ........................wedev.......................................... */
+.quora {
+  width: "100%";
+  min-width: fit-content;
+}
+
+.quora__contents {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+  background-color: rgba(0, 0, 0, 0.05);
+  min-width: fit-content;
+  width: 100%;
+}
+
+.quora__content {
+  display: flex;
+  flex-direction: row;
+  padding: 0px 10px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.react-responsive-modal-modal {
+  width: 90vw;
+  height: 90vh;
+}
+
+.quill {
+  height: 50vh;
+}
+
+.react-responsive-modal-overlay {
+  background: rgb(0 0 0 / 75%);
+}
+/* ............................wedev..................................... */
+/* ......................header........................................ */
+.header {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    position: sticky;
+    z-index: 1000;
+    top: 0px;
+    /* box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0.5); */
+    box-shadow: 2px 3px 6px rgba(187, 187, 187, 0.5);
+    justify-content: center;
+    padding: 3px;
+  }
+  
+  .header-con {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 5px; */
+  }
+  
+  .header_logo > img {
+    height: 30px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+  }
+  
+  .header-icons {
+    display: flex;
+  }
+  
+  .header_icon {
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .header_icon:hover {
+    background-color: #eee;
+    border-radius: 5px;
+  }
+  
+  .header_icon > .MuiSvgIcon-root {
+    color: gray;
+    font-size: xx-large;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .header_icon:hover > .MuiSvgIcon-root {
+    color: #000;
+  }
+  
+  /* .qHeader__icons {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  .qHeader__icons > .active > .MuiSvgIcon-root {
+    color: #8f1f1b;
+  }
+  .qHeader__icon > .MuiSvgIcon-root {
+    font-size: xx-large;
+    padding: 5px 20px;
+    color: gray;
+  }
+  .qHeader__icon > .MuiSvgIcon-root:hover {
+    background-color: rgba(233, 233, 233, 0.5);
+    border-radius: 10px;
+    color: #b92b27;
+  } */
+  
+  .search {
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgray;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 5px;
+  }
+  
+  .search > input {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: rgb(49, 49, 49);
+    height: 30px;
+  }
+  
+  .search > .MuiSvgIcon-root {
+    color: gray;
+  }
+  
+  .avatar {
+    cursor: pointer;
+  }
+  .header_rem {
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    
+    
+  }
+  
+  .header_rem > .MuiSvgIcon-root {
+    font-size: xx-large;
+    color: gray;
+    margin-left: 25px;
+    cursor: pointer;
+  }
+  .header_rem > .MuiSvgIcon-root:hover {
+    color: #000;
+  }
+  
+  .header_rem > .MuiButton-root {
+    color: white;
+    background: #222;
+    text-transform: inherit;
+    border-radius: 5px;
+    margin-left: 25px;
+  }
+  
+  .header_rem > .MuiButton-root:hover {
+    color: #222;
+    background: rgb(214, 214, 214);
+  }
+  
+  .modal__title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    border-bottom: 1px solid rgba(187, 187, 187, 0.5);
+  }
+  
+  .modal__title > h5 {
+    color: gray;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    margin-right: 30px;
+  }
+  
+  .modal__title > h5:hover {
+    color: #b92b27;
+  }
+  
+  .modal__info {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  .modal__info > p {
+    margin-left: 10px;
+    font-size: small;
+    color: gray;
+  }
+  
+  .modal__info > .modal__scope {
+    display: flex;
+    align-items: center;
+    color: rgb(98, 98, 98);
+    padding: 5px;
+    margin-left: 10px;
+    background-color: rgb(230, 230, 230);
+    border-radius: 33px;
+    cursor: pointer;
+  }
+  
+  .modal__Field {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    flex: 1;
+  }
+  
+  .modal__Field > .modal__fieldLink {
+    color: gray;
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+  }
+  
+  .modal__Field > .modal__fieldLink > input {
+    flex: 1;
+    border: none;
+    outline: none;
+    margin-left: 5px;
+  }
+  
+  .modal__buttons {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 10px;
+    align-items: center;
+  }
+  
+  .modal__buttons > .cancle {
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    color: gray;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 33px;
+    cursor: pointer;
+  }
+  
+  .modal__buttons > .cancle:hover {
+    color: red;
+  }
+  
+  .modal__buttons > .add {
+    border: none;
+    outline: none;
+    margin-top: 10px;
+    background-color: #222;
+    color: white;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 33px;
+    cursor: pointer;
+    width: 50%;
+  }
+  
+  .modal__buttons > .add:hover {
+    background-color: #eee;
+    color: #222;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .qHeader__icons {
+      display: none;
+    }
+  
+    .qHeader__input {
+      display: none;
+    }
+  }
+/* 
+  ............................................header................................. */
+
+
+
+  /* .........................................sidebar...................................... */
+
+  .sidebar {
+    /* margin-top: 10px; */
+    margin-right: 10px;
+    flex: 0.2;
+  }
+  /* .....................................sidebar.......................................... */
+
+  /* ..........................................widgets........................................ */
+  .widget {
+    flex: 0.2;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    height: fit-content;
+    background-color: white;
+  }
+  
+  .widget__header {
+    border-bottom: 1px solid lightgray;
+  }
+  
+  .widget__header > h5 {
+    padding: 10px;
+    color: rgb(80, 80, 80);
+    font-size: 15px;
+    letter-spacing: 1.1px;
+  }
+  
+  .widget__contents {
+    display: flex;
+    flex-direction: column;
+  }
+
+  
+  /* ..........................................widgets........................................ */
+
+  /* ...........................................content.......................................... */
+  .feed {
+    display: flex;
+    flex-direction: column;
+    flex: 0.6;
+  }
+
+    /* ...........................................content.......................................... */
+
+
+
+      /* ...........................................sidebarop.......................................... */
+.sidebarOptions {
+  display: flex;
+  flex-direction: column;
+}
+.sidebarOption {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.sidebarOption:hover {
+  background: rgb(211, 211, 211);
+  border-radius: 5px;
+}
+.sidebarOption > img {
+  height: 30px;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+.sidebarOption > .MuiSvgIcon-root {
+  font-size: medium;
+  margin-left: 20px;
+}
+.sidebarOption > p {
+  margin-left: 10px;
+  color: gray;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.sidebarOption > .text {
+  margin-left: 23px;
+  color: gray;
+  font-weight: 400;
+  font-size: 13px;
+}
+        /* ...........................................sidebarop.......................................... */
+
+        /* ...........................................widgets.......................................... */
+        .widget {
+            flex: 0.2;
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            margin-right: 20px;
+            border: 1px solid lightgray;
+            border-radius: 5px;
+            height: fit-content;
+            background-color: white;
+          }
+          
+          .widget__header {
+            border-bottom: 1px solid lightgray;
+          }
+          
+          .widget__header > h5 {
+            padding: 10px;
+            color: rgb(80, 80, 80);
+            font-size: 15px;
+            letter-spacing: 1.1px;
+          }
+          
+          .widget__contents {
+            display: flex;
+            flex-direction: column;
+          }
+
+
+
+
+
+/* ...............................widgetscontent.................................. */
+
+
+          .widget__contents {
+            display: flex;
+            cursor: pointer;
+          }
+          
+          .widget__content {
+            margin: 5px;
+            display: flex;
+            padding: 5px;
+            border-bottom: 1px solid lightgray;
+          }
+          
+          .widget__content > img {
+            height: 30px;
+            border-radius: 5px;
+          }
+          
+          .widget__contentTitle {
+            margin-left: 10px;
+          }
+          .widget__contentTitle > h5 {
+            color: rgb(70, 68, 68);
+          }
+          
+          .widget__contentTitle > p {
+            color: gray;
+            font-size: small;
+          }
+/* ..............................feed.......................................... */
+.feed {
+    display: flex;
+    flex-direction: column;
+    flex: 0.6;
+  }
+
+
+/* ...................................quorabox...................................... */
+.quoraBox {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid lightgray;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    max-width: 700px;
+  }
+  
+  .quoraBox:hover {
+    border: 1px solid rgb(175, 175, 175);
+  }
+  
+  .quoraBox__info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .quoraBox__info > h5 {
+    color: rgb(129, 129, 129);
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: large;
+  }
+  
+  .quoraBox__quora {
+    display: flex;
+    margin-top: 8px;
+  }
+
+
+  /* ------------------------------------------post------------------------------------------------ */
+  .post {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: white;
+    margin-top: 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    max-width: 700px;
+    box-shadow: 0px 5px 8px -9px solid rgab(0, 0, 0, 0.5);
+  }
+  
+  .post__info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .post__info > h4 {
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 13px;
+  }
+  .post__info > h4:hover {
+    text-decoration: underline;
+  }
+  
+  .post__info > small {
+    margin-left: 10px;
+  }
+  
+  .post__body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .post__body > .post__question {
+    margin-top: 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex: 1;
+  }
+  
+  .post__question > .post__btnAnswer {
+    margin-left: auto;
+    cursor: pointer;
+    padding: 7px;
+    background-color: #222;
+    outline: none;
+    border: none;
+    color: lightgray;
+    font-weight: 300;
+    font-size: 14px;
+    border-radius: 5px;
+  }
+  
+  .post__btnAnswer:hover {
+    color: #222;
+    background: lightgray;
+  }
+  
+  .post__question > p:hover {
+    text-decoration: underline;
+  }
+  
+  .post__body > .post__answer > p {
+    margin-bottom: 10px;
+  }
+  
+  /* .post__image {
+    background: rgb(0, 140, 255);
+  } */
+  
+  .post__body > img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .post__footer {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+  }
+  
+  .post__footer > .MuiSvgIcon-root {
+    color: gray;
+    margin-right: 40px;
+    cursor: pointer;
+  }
+  
+  .post__footerAction {
+    background-color: lightgray;
+    padding: 5px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 33px;
+  }
+  .post__footerAction > .MuiSvgIcon-root {
+    color: gray;
+    margin-right: 40px;
+    cursor: pointer;
+  }
+  
+  .post__footerAction > .MuiSvgIcon-root:hover {
+    color: rgb(0, 140, 255);
+    margin-right: 40px;
+  }
+  
+  .post__footerLeft {
+    margin-left: auto;
+  }
+  
+  .post__footerLeft > .MuiSvgIcon-root {
+    color: gray;
+    cursor: pointer;
+    margin-left: 30px;
+  }
+  
+  .modal__question {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .modal__question > h1 {
+    color: #8f1f1b;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .modal__question > p {
+    color: gray;
+    font-size: small;
+  }
+  
+  .modal__question > p > .name {
+    color: black;
+    font-weight: bold;
+  }
+  
+  .modal__answer {
+    display: flex;
+    padding-top: 20px;
+    flex: 1;
+  }
+  
+  .modal__answer > textarea {
+    width: 100%;
+    height: 200px;
+    padding: 5px;
+    font-size: 15px;
+    color: black;
+  }
+  
+  .modal__button {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+    width: 100%;
+  }
+  
+  .modal__button > .cancle {
+    border: none;
+    margin-top: 10px;
+    outline: none;
+    color: gray;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 33px;
+    cursor: pointer;
+  }
+  
+  .modal__button > .cancle:hover {
+    color: red;
+  }
+  .modal__button > .add {
+    border: none;
+    outline: none;
+    margin-top: 5px;
+    background-color: #222;
+    color: white;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 33px;
+    cursor: pointer;
+    width: 50%;
+  }
+  .modal__button > .add:hover {
+    background-color: #eee;
+    color: #222;
+  }
+  
+  .react-responsive-modal-modal {
+    /* width: 600px; */
+    height: 400px;
+  }
+  
+  .quill {
+    width: 100%;
+    height: 120px;
+  }
